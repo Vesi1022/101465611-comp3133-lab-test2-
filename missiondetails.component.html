@@ -1,0 +1,6 @@
+<div *ngIf="mission">
+  <h2>{{ mission.mission_name }}</h2>
+  <img [src]="mission.links.mission_patch_small" alt="Mission Patch" />
+  <p>{{ mission.details }}</p>
+  <p>Rocket: {{ mission.rocket.rocket_name }} - {{ mission.rocket.rocket_type }}</p>
+</div>

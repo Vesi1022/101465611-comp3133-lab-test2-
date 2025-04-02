@@ -1,0 +1,8 @@
+<div>
+  <input [(ngModel)]="year" placeholder="Enter launch year" />
+  <button (click)="search()">Search</button>
+</div>
+
+<div *ngFor="let launch of launches" class="launch-card">
+  <h3>{{ launch.mission_name }} ({{ launch.launch_year }})</h3>
+</div>
